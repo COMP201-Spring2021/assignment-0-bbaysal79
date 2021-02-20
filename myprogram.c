@@ -55,6 +55,9 @@ char alphabet_index(int index)
 {
 	//TODO: for index 0, return 'a'. index 1, 'b', etc. until 25 for 'z'.
 	//if index is out of range, return space ' '.
-	return 'a';
+  char letters[26] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+  if(index <= 25)
+	  return letters[index];
+  return ' ';
 }
 
