@@ -27,7 +27,13 @@ int sum_of_odd_numbers(int *array, int count)
 int min_of_numbers(int *array, int count)
 {
 	//TODO: return the minimum number from the array
-	return array[0];
+  int min = array[0];
+  for(int i=0; i<count; i++){
+    if(array[i] < min){
+      min = array[i];
+    }
+  }
+	return min;
 }
 
 int reversed_number(int number)
