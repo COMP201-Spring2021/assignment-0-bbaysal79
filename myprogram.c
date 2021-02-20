@@ -2,10 +2,12 @@
 
 int factorial(int n)
 {
-	int result = 1;
+	unsigned int result = 1;
 
 	//TODO: factorial of n (n! = 1*2*...*n)
-
+  for(int i=1; i<=n; i++){
+    result *= i;
+  }
 	return result;
 }
 
