@@ -14,10 +14,12 @@ int factorial(int n)
 int sum_of_odd_numbers(int *array, int count)
 {
 	int sum = 0;
-	for (int i=0;i<count;++i)
+	for (int i=0; i<count; ++i)
 	{
 		//TODO: only add odd numbers, e.g., 3. Skip even numbers, e.g., 4
-		sum += array[i];
+    if(array[i]%2 != 0){
+		  sum += array[i];
+    }
 	}
 	return sum;
 }
